@@ -1,0 +1,16 @@
+Synthesthesia
+=============
+
+Patches for audio synthesis from edge detection.
+
+These files are part of a specific art project.
+
+video camera -> edge detection -> audio synthesis.
+
+(wave shaping and a melodic step sequencer)
+
+Author: Alexandre Quessy
+
+(c) 2012 Alexandre Quessy
+License: GPL v3 or above
+
