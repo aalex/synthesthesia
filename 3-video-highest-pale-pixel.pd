@@ -1,4 +1,4 @@
-#N canvas 395 22 701 672 10;
+#N canvas 380 95 701 672 10;
 #X obj 35 169 gemwin;
 #X msg 90 137 0 \, destroy;
 #X obj 213 95 gemhead;
@@ -9,12 +9,12 @@
 1;
 #X obj 43 93 select 1 0;
 #X obj 39 -17 loadbang;
-#X msg 381 100 device 7;
+#X msg 381 100 device 0;
 #N canvas 162 133 570 420 serin 0;
-#X obj 205 60 cnv 20 20 20 empty \$0-open-canvas 7 4 10 0 16 -233017
+#X obj 205 60 cnv 20 20 20 empty \$0-open-canvas 0 4 10 0 16 -233017
 -1 0;
 #X obj 60 61 hradio 18 1 1 8 empty empty empty 0 -6 0 8 -225271 -1
--1 7;
+-1 0;
 #X obj 60 13 inlet;
 #X msg 200 202 label \$1;
 #X obj 200 180 makefilename %d;
@@ -41,7 +41,7 @@
 #X msg 382 49 dimen 320 240;
 #X obj 382 27 loadbang;
 #X obj 507 127 hsl 100 15 0 1 0 0 empty empty threshold -2 -8 0 10
--4034 -1 -1 3300 1;
+-4034 -1 -1 2720 1;
 #X obj 431 133 loadbang;
 #X obj 38 5 delay 1000;
 #X obj 59 515 pix_data;
@@ -49,7 +49,7 @@
 #X obj 153 266 rectangle 5.33333 4;
 #X obj 36 252 metro 250;
 #X obj 35 229 tgl 15 0 empty empty read_pixels 17 7 0 10 -258113 -1
--1 0 1;
+-1 1 1;
 #X obj 36 207 loadbang;
 #X obj 31 348 until;
 #X obj 139 291 pix_info -----------------;
@@ -115,6 +115,8 @@ X position;
 #X msg 399 202 1 1 1;
 #X msg 453 197 0 0 0;
 #X obj 147 194 pix_duotone;
+#X obj 522 1 loadbang;
+#X msg 524 24 0;
 #X connect 1 0 0 0;
 #X connect 2 0 3 0;
 #X connect 3 0 17 0;
@@ -195,3 +197,5 @@ X position;
 #X connect 66 0 16 1;
 #X connect 66 0 4 0;
 #X connect 66 0 23 0;
+#X connect 67 0 68 0;
+#X connect 68 0 10 0;
