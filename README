@@ -14,3 +14,23 @@ Author: Alexandre Quessy
 (c) 2012 Alexandre Quessy
 License: GPL v3 or above
 
+
+Dependencies
+------------
+
+Software: Pure Data, Lunch
+
+Pure Data libraries: GEM, zexy
+
+
+Installation and usage
+----------------------
+
+sudo apt-get install puredata pd-zexy gem python-lunch
+sudo apt-get install git
+mkdir -p ~/src
+cd ~/src
+git clone git://github.com/aalex/synthesthesia.git
+cd synthesthesia
+lunch -g launch.lunch
+
