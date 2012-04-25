@@ -4,5 +4,8 @@ import os
 
 ABSTRACTIONS_PATH = os.path.join(os.path.expanduser("~/src/synthesthesia"), "abstractions")
 
-add_command("pd -alsa -channels 2 -lib zexy -path /usr/lib/pd/extra/Gem -lib Gem -path %s main.pd" % (ABSTRACTIONS_PATH), identifier="pd")
+AUDIO = "-alsa"
+# AUDIO = "-jack"
+
+add_command("pd %s -channels 2 -lib zexy -path /usr/lib/pd/extra/Gem -lib Gem -path %s main.pd" % (AUDIO, ABSTRACTIONS_PATH), identifier="pd")
 
