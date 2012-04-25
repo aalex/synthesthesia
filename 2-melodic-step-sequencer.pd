@@ -1,4 +1,4 @@
-#N canvas 80 305 920 570 10;
+#N canvas 939 82 920 570 10;
 #N canvas 0 22 450 300 (subpatch) 0;
 #X array \$0-array 8 float 2;
 #X coords 0 96 8 48 320 48 1;
@@ -54,6 +54,7 @@
 #X obj 626 322 loadbang;
 #X msg 625 349 60 62 64 65 67 68 69 71 72 74 76 77 79;
 #X obj 626 407 vanilla.drip;
+#X obj 138 488 vanilla.write.wav~;
 #X connect 1 0 26 0;
 #X connect 2 0 12 0;
 #X connect 4 0 3 0;
@@ -65,6 +66,8 @@
 #X connect 11 0 10 0;
 #X connect 12 0 6 0;
 #X connect 12 0 6 1;
+#X connect 12 0 49 0;
+#X connect 12 0 49 1;
 #X connect 14 0 19 0;
 #X connect 15 0 16 0;
 #X connect 16 0 17 0;
