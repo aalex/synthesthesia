@@ -1,0 +1,24 @@
+#N canvas 94 75 450 300 10;
+#X obj 104 116 bng 50 250 50 0 empty empty write 17 7 0 10 -258113
+-1 -1;
+#X obj 298 230 delay 5000;
+#X msg 322 197 start;
+#X obj 356 134 savepanel;
+#X msg 355 164 open \$1;
+#X msg 294 260 stop;
+#X obj 58 92 inlet~;
+#X obj 61 269 writesf~ 2;
+#X obj 231 80 inlet~;
+#X obj 244 164 t b a;
+#X connect 0 0 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 7 0;
+#X connect 3 0 4 0;
+#X connect 4 0 9 0;
+#X connect 5 0 7 0;
+#X connect 6 0 7 0;
+#X connect 8 0 7 1;
+#X connect 9 0 2 0;
+#X connect 9 0 1 0;
+#X connect 9 1 7 0;
+#X coords 0 -1 1 1 60 70 1 100 100;
