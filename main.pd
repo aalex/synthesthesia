@@ -1,5 +1,5 @@
-#N canvas 802 322 387 423 10;
-#N canvas 0 1 770 479 video 0;
+#N canvas 14 39 387 423 10;
+#N canvas 0 25 770 479 video 0;
 #X obj 124 299 gemwin;
 #X msg 156 229 0 \, destroy;
 #X obj 261 239 pix_video;
@@ -112,7 +112,7 @@ X position;
 #X obj 213 286 pix_duotone;
 #X obj 578 21 loadbang;
 #X obj 271 127 hsl 100 15 0 1 0 0 empty empty threshold -2 -8 0 10
--258113 -1 -1 6020 1;
+-258113 -1 -1 7920 1;
 #X obj 269 52 loadbang;
 #X msg 269 77 0.8;
 #X text 218 144 Video camera;
@@ -126,6 +126,10 @@ X position;
 #X obj 269 510 - 1;
 #X obj 261 203 gemhead 50;
 #X msg 43 246 dimen 640 480 \, create \, 1;
+#X obj 194 136 hradio 15 1 0 2 empty empty window_size 0 -8 0 10 -258113
+-1 -1 1;
+#X obj 29 167 sel 0 1;
+#X obj 48 122 t f b;
 #X connect 1 0 0 0;
 #X connect 2 0 15 0;
 #X connect 3 0 16 0;
@@ -214,6 +218,11 @@ X position;
 #X connect 74 0 28 1;
 #X connect 75 0 2 0;
 #X connect 76 0 0 0;
+#X connect 77 0 79 0;
+#X connect 78 0 4 0;
+#X connect 78 1 76 0;
+#X connect 79 0 78 0;
+#X connect 79 1 1 0;
 #X coords 0 -1 1 1 300 100 1 100 100;
 #X restore 27 5 pd video;
 #N canvas 153 175 782 511 audio-melodic-step-sequencer 0;
@@ -397,7 +406,7 @@ X position;
 #X obj 134 102 dbtorms;
 #X obj 133 79 + 100;
 #X obj 330 223 vsl 15 128 -100 0 0 0 empty empty empty 0 -9 0 10 -258113
--1 -1 8660 1;
+-1 -1 10160 1;
 #X msg 326 192 -20;
 #X obj 325 163 loadbang;
 #X obj 61 138 *~ 0;
@@ -405,7 +414,7 @@ X position;
 #X obj 184 141 *~ 0;
 #X obj 13 341 dac~;
 #X obj 330 364 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -31.811 256;
+-262144 -1 -1 -20 256;
 #X connect 1 0 11 0;
 #X connect 2 0 13 0;
 #X connect 4 0 3 0;
