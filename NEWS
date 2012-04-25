@@ -1,0 +1,31 @@
+synthesthesia release notes
+===========================
+
+synthesthesia 0.1.2 (2012-04-25)
+--------------------------------
+
+First unstable working version.
+
+* improve README
+* melodic step sequencer totally works
+* read highest pale pixel, not lowest
+* move abstractions and prototypes to their directories
+* add a whole bunch of files.
+* step seq: actually use BPM
+* adsr in melodic seq
+* do not save table contents
+
+
+synthesthesia 0.1.0 (2012-04-24)
+--------------------------------
+
+Initial release. (first prototypes)
+
+* add README
+* add wav writer to melodic stepper
+* add run-* bash scripts
+* gem patch: open device 0 by default
+* use vanilla drip in closest note
+* use vanilla drip
+* add write.wav abs and random gen to wave shape
+
