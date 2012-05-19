@@ -1,9 +1,16 @@
 synthesthesia release notes
 ===========================
 
+
+synthesthesia 0.1.4 (2012-05-19)
+--------------------------------
+This release is a developer snapshot in an unstable branch.
+
+* improve README
+
+
 synthesthesia 0.1.2 (2012-04-25)
 --------------------------------
-
 First unstable working version.
 
 * improve README
@@ -18,7 +25,6 @@ First unstable working version.
 
 synthesthesia 0.1.0 (2012-04-24)
 --------------------------------
-
 Initial release. (first prototypes)
 
 * add README
