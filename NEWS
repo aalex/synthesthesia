@@ -2,11 +2,15 @@ synthesthesia release notes
 ===========================
 
 
-synthesthesia 0.1.6 (2012-0?-??)
+synthesthesia 0.1.6 (2012-05-27)
 --------------------------------
 This release is a developer snapshot in an unstable branch.
 
-* (TODO)
+* Integrate audio wave shaping game (from prototype)
+* Add audio bandbass sweep game
+* Add audio ampltiude sweep game 
+* Choose game with number key in GEM window
+* Launch pd with -jack option
 
 
 synthesthesia 0.1.4 (2012-05-19)
