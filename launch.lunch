@@ -5,7 +5,7 @@ import os
 ABSTRACTIONS_PATH = os.path.join(os.path.expanduser("~/src/synthesthesia"), "abstractions")
 
 AUDIO = "-alsa"
-PD = "pdextended"
+# PD = "pdextended"
 PD = "pd"
 #GEM_PATH = "/usr/lib/pd/extra/Gem"
 GEM_PATH = "/usr/local/lib/pd/extra/Gem"
