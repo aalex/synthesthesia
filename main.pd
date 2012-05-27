@@ -1,14 +1,14 @@
-#N canvas 67 107 361 478 10;
-#N canvas 681 100 816 771 video 0;
+#N canvas 67 113 361 478 10;
+#N canvas 679 106 816 771 video 0;
 #X obj 124 299 gemwin;
-#X msg 156 229 0 \, destroy;
+#X msg 144 269 0 \, destroy;
 #X obj 261 239 pix_video;
 #X obj 219 334 pix_texture;
-#X msg 108 211 dimen 320 240 \, create \, 1;
+#X msg 96 224 dimen 320 240 \, create \, 1;
 #X obj 110 133 tgl 50 0 empty empty GEM_Window 17 7 0 10 -258113 -1
--1 1 1;
+-1 0 1;
 #X obj 109 185 select 1 0;
-#X obj 104 42 loadbang;
+#X obj 144 15 loadbang;
 #X msg 315 221 device 1;
 #N canvas 162 133 570 420 serin 0;
 #X obj 205 60 cnv 20 20 20 empty \$0-open-canvas 1 4 10 0 16 -233017
@@ -41,7 +41,7 @@
 #X msg 463 46 dimen 320 240;
 #X obj 463 24 loadbang;
 #X obj 497 225 loadbang;
-#X obj 103 64 delay 1000;
+#X obj 143 37 delay 1000;
 #X obj 119 602 pix_data;
 #X obj 261 262 pix_invert;
 #X obj 219 358 rectangle 5.33333 4;
@@ -108,7 +108,7 @@
 -258113 -1 -1 7920 1;
 #X obj 269 52 loadbang;
 #X msg 269 77 0.8;
-#X text 218 144 Video camera;
+#X text 225 143 Video camera;
 #X msg 580 44 1;
 #X obj -1 361 s \$0-refresh;
 #X obj -1 387 r \$0-refresh;
@@ -118,9 +118,9 @@
 #X obj 306 481 f 240;
 #X obj 269 510 - 1;
 #X obj 261 203 gemhead 50;
-#X msg 43 246 dimen 640 480 \, create \, 1;
+#X msg 23 248 dimen 640 480 \, create \, 1;
 #X obj 194 136 hradio 15 1 0 2 empty empty window_size 0 -8 0 10 -258113
--1 -1 0;
+-1 -1 1;
 #X obj 29 167 sel 0 1;
 #X obj 48 122 t f b;
 #X msg 383 223 0;
@@ -128,12 +128,14 @@
 #X obj 188 653 > 0;
 #X text 221 696 If > thresh stop looping on Y and write to table at
 X position;
+#X obj 57 93 f;
+#X msg 146 62 1;
 #X connect 1 0 0 0;
 #X connect 2 0 15 0;
 #X connect 3 0 16 0;
 #X connect 4 0 0 0;
 #X connect 5 0 6 0;
-#X connect 6 0 4 0;
+#X connect 6 0 81 0;
 #X connect 6 1 1 0;
 #X connect 7 0 13 0;
 #X connect 8 0 2 0;
@@ -142,7 +144,7 @@ X position;
 #X connect 11 0 10 0;
 #X connect 12 0 56 0;
 #X connect 12 0 57 0;
-#X connect 13 0 5 0;
+#X connect 13 0 82 0;
 #X connect 14 1 52 0;
 #X connect 15 0 58 0;
 #X connect 17 0 67 0;
@@ -215,13 +217,15 @@ X position;
 #X connect 71 0 28 1;
 #X connect 72 0 2 0;
 #X connect 73 0 0 0;
-#X connect 74 0 76 0;
+#X connect 74 0 81 0;
 #X connect 75 0 4 0;
 #X connect 75 1 73 0;
 #X connect 76 0 75 0;
 #X connect 76 1 1 0;
 #X connect 77 0 38 0;
 #X connect 79 0 35 0;
+#X connect 81 0 76 0;
+#X connect 82 0 74 0;
 #X coords 0 -1 1 1 300 100 1 100 100;
 #X restore 27 5 pd video;
 #N canvas 67 95 578 616 audio-output 0;
@@ -235,7 +239,7 @@ X position;
 #X obj 134 102 dbtorms;
 #X obj 133 79 + 100;
 #X obj 212 233 vsl 15 50 -100 0 0 0 empty empty Volume 0 -9 0 10 -258113
--1 -1 4900 1;
+-1 -1 3920 1;
 #X msg 368 112 -20;
 #X obj 367 83 loadbang;
 #X obj 61 138 *~ 0;
@@ -243,7 +247,7 @@ X position;
 #X obj 184 141 *~ 0;
 #X obj 13 341 dac~;
 #X obj 212 293 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 -20 256;
 #X text 280 221 save to file;
 #X connect 1 0 11 0;
 #X connect 2 0 13 0;
@@ -547,5 +551,12 @@ X position;
 #X connect 34 0 6 2;
 #X coords 0 -1 1 1 300 60 1 100 100;
 #X restore 29 191 pd audio-wave-shaping;
-#X obj 29 407 hradio 50 1 0 2 \$0-enabled empty Choose_game 0 -8 0
+#N canvas 406 386 834 510 game-selector 0;
+#X obj 232 124 hradio 30 1 0 2 \$0-enabled empty Choose_game 0 -8 0
 10 -258113 -1 -1 0;
+#X obj 220 46 loadbang;
+#X msg 215 70 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X coords 0 -1 1 1 300 60 1 100 100;
+#X restore 21 389 pd game-selector;
