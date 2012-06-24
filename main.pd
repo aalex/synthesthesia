@@ -1,7 +1,7 @@
-#N canvas 584 199 360 621 10;
-#N canvas 374 291 745 336 game-selector 0;
-#X obj 232 124 hradio 30 1 0 5 empty empty Choose_game 0 -8 0 10 -258113
--1 -1 1;
+#N canvas 473 435 673 318 10;
+#N canvas 372 296 745 336 game-selector 0;
+#X obj 239 117 hradio 30 1 0 5 empty empty Choose_game 0 -8 0 10 -258113
+-1 -1 0;
 #X obj 220 46 loadbang;
 #X msg 215 70 0;
 #X obj 467 76 gemkeyboard;
@@ -16,6 +16,11 @@
 #X msg 605 138 5;
 #X obj 282 242 + 1;
 #X obj 439 211 - 1;
+#X text 248 145 1;
+#X text 279 146 2;
+#X text 309 146 3;
+#X text 340 146 4;
+#X text 371 145 5;
 #X connect 0 0 13 0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
@@ -35,10 +40,10 @@
 #X connect 13 0 6 0;
 #X connect 14 0 0 0;
 #X coords 0 -1 1 1 300 60 1 100 100;
-#X restore 25 543 pd game-selector;
-#X obj 25 115 toy.melodic.sequencer \$0 1;
-#X obj 31 262 toy.sweep \$0 3;
-#X obj 32 342 toy.wave.shape \$0 4;
-#X obj 26 426 syn.audio.output \$0;
-#X obj 26 187 toy.amplitude \$0 2;
+#X restore 29 238 pd game-selector;
+#X obj 341 5 toy.melodic.sequencer \$0 1;
+#X obj 347 152 toy.sweep \$0 3;
+#X obj 348 232 toy.wave.shape \$0 4;
+#X obj 27 117 syn.audio.output \$0;
+#X obj 342 77 toy.amplitude \$0 2;
 #X obj 27 5 syn.video.input \$0;
