@@ -2,11 +2,13 @@ synthesthesia release notes
 ===========================
 
 
-synthesthesia 0.1.8 (2012-??-??)
+synthesthesia 0.1.8 (2012-06-24)
 --------------------------------
 This release is a developer snapshot in an unstable branch.
 
-* (fill me)
+* split into many abstractions
+* use ALSA at 44100 Hz
+* support 640x480 camera. (Logitech Quickcam c210)
 
 
 synthesthesia 0.1.6 (2012-05-27)
