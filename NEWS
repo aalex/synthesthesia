@@ -1,11 +1,13 @@
 synthesthesia release notes
 ===========================
 
-synthesthesia 0.2.2 (2012-0?-??)
+synthesthesia 0.2.2 (2012-06-25)
 --------------------------------
 This version is a release in a stable branch.
 
-* (...)
+* choose patch "additive" at startup
+* split into two separate processes
+
 
 synthesthesia 0.2.0 (2012-06-24)
 --------------------------------
