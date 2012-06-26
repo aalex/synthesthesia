@@ -1,14 +1,13 @@
-#N canvas 66 82 450 300 10;
+#N canvas 66 87 450 300 10;
 #X obj 278 239 vanilla.write.wav~;
 #X msg 77 449 \; pd dsp \$1;
 #X obj 105 225 tgl 50 0 empty empty compute_audio 17 7 0 10 -258113
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 240 167 loadbang;
 #X obj 134 102 dbtorms;
 #X obj 133 79 + 100;
 #X obj 212 233 vsl 15 50 -100 0 0 0 empty empty Master_volume 0 -9
-0 10 -258113 -1 -1 0 1;
-#X msg 368 112 -20;
+0 10 -258113 -1 -1 4900 1;
 #X obj 367 83 loadbang;
 #X obj 61 138 *~ 0;
 #X text 140 292 volume (dB);
@@ -19,18 +18,19 @@
 #X text 280 221 save to file;
 #X obj 236 36 catch~ \$1-right;
 #X obj 54 40 catch~ \$1-left;
+#X msg 368 112 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
-#X connect 4 0 9 1;
+#X connect 4 0 8 1;
 #X connect 5 0 4 0;
 #X connect 6 0 5 0;
-#X connect 6 0 13 0;
-#X connect 7 0 6 0;
-#X connect 8 0 7 0;
-#X connect 9 0 0 0;
-#X connect 9 0 12 0;
-#X connect 11 0 0 1;
-#X connect 11 0 12 1;
-#X connect 15 0 11 0;
-#X connect 16 0 9 0;
+#X connect 6 0 12 0;
+#X connect 7 0 16 0;
+#X connect 8 0 0 0;
+#X connect 8 0 11 0;
+#X connect 10 0 0 1;
+#X connect 10 0 11 1;
+#X connect 14 0 10 0;
+#X connect 15 0 8 0;
+#X connect 16 0 6 0;
 #X coords 0 -1 1 1 300 110 1 100 200;
