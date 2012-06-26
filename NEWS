@@ -16,6 +16,7 @@ This release is a developer snapshot in an unstable branch.
 * add 5th toy (spectrum via additive synthesis)
 * improve main layout
 * press escape to toggle fullscreen
+* change size of squares in sweep toy
 
 
 synthesthesia 0.1.8 (2012-06-24)
