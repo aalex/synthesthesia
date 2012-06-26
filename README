@@ -32,6 +32,7 @@ How to install it::
   git clone git://github.com/aalex/synthesthesia.git
   cd synthesthesia
   lunch -g launch.lunch
+  cp restart-synthesthesia.sh ~/Desktop/
 
 See also doc/install-deps.txt and doc/interactive-use.txt
 
