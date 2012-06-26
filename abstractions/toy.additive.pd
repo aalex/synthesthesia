@@ -1,4 +1,4 @@
-#N canvas 66 92 926 551 10;
+#N canvas 66 97 926 551 10;
 #X obj 224 52 loadbang;
 #X obj 111 138 tgl 15 0 empty empty enabled 17 7 0 10 -258113 -1 -1
 1 1;
@@ -53,10 +53,10 @@
 #X obj 343 371 dbtorms;
 #X obj 342 348 + 100;
 #X obj 289 104 vsl 15 50 -100 0 0 0 empty empty empty 0 -9 0 10 -258113
--1 -1 4700 1;
+-1 -1 4600 1;
 #X obj 199 426 *~ 0;
 #X obj 317 142 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -4.08163 256;
+-262144 -1 -1 -6.12245 256;
 #X obj 298 48 loadbang;
 #X text 314 122 gain (dB);
 #X msg 226 80 36;
@@ -87,7 +87,7 @@
 #X obj 420 106 table \$0-harmonics 17;
 #X obj 665 424 pack s 17 0 1;
 #X obj 667 399 symbol \$0-harmonics;
-#X msg 299 69 -3;
+#X msg 299 70 -6;
 #X connect 0 0 19 0;
 #X connect 1 0 2 1;
 #X connect 1 0 6 0;
