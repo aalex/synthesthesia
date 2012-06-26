@@ -1,5 +1,5 @@
-#N canvas 471 440 744 422 10;
-#N canvas 372 296 745 336 game-selector 0;
+#N canvas 155 457 744 422 10;
+#N canvas 196 574 745 336 game-selector 0;
 #X obj 239 117 hradio 30 1 0 5 empty empty Choose_game 0 -8 0 10 -258113
 -1 -1 0;
 #X obj 220 46 loadbang;
@@ -21,6 +21,14 @@
 #X text 309 146 3;
 #X text 340 146 4;
 #X text 371 145 5;
+#X obj 69 242 color 0.5 0.5 0.5;
+#X obj 67 193 gemhead 200;
+#X obj 72 274 text2d;
+#X msg 217 270 text \$1;
+#X obj 142 148 loadbang;
+#X msg 165 169 36;
+#X obj 70 219 translateXYZ -4.4 -3.1 0;
+#X msg 142 189 font DejaVuSerif-Bold.ttf;
 #X connect 0 0 13 0;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
@@ -38,7 +46,16 @@
 #X connect 11 0 5 0;
 #X connect 12 0 5 0;
 #X connect 13 0 6 0;
+#X connect 13 0 23 0;
 #X connect 14 0 0 0;
+#X connect 20 0 22 0;
+#X connect 21 0 26 0;
+#X connect 23 0 22 0;
+#X connect 24 0 25 0;
+#X connect 24 0 27 0;
+#X connect 25 0 22 1;
+#X connect 26 0 20 0;
+#X connect 27 0 22 0;
 #X coords 0 -1 1 1 300 60 1 100 100;
 #X restore 28 324 pd game-selector;
 #X obj 341 5 toy.melodic.sequencer \$0 1;
