@@ -1,9 +1,15 @@
 synthesthesia release notes
 ===========================
 
+synthesthesia 0.2.2 (2012-0?-??)
+--------------------------------
+This version is a release in a stable branch.
+
+* (...)
+
 synthesthesia 0.2.0 (2012-06-24)
 --------------------------------
-This release is a developer snapshot in an unstable branch.
+This version is a release in a stable branch.
 
 * add synthesthesia.sh and restart-synthesthesia.sh scripts
 * add interactive-use.txt
