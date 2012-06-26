@@ -1,0 +1,21 @@
+How to use Synthesthesia
+========================
+
+Operating instructions
+----------------------
+The patch should be launched when you turn un the computer.
+
+When the patch is running, click in the video window so that it gets the keystrokes you type to control it.
+
+Press Escape to toggle fullscreen. (you might need to click in the video window so that the keystrokes work)
+
+If ever you want to stop the patch, toggle fullscreen off and quit the "Lunch" application. (answer yes when asked if you are sure)
+
+To launch the patch again, double-click on the "restart-synthesthesia.sh" file on the desktop, and answer "Run" when prompted about what to do.
+
+End-user instructions
+---------------------
+Press numbers from 1 to 5 in order to choose the sound toy you want to play with. (you might need to click in the video window so that the keystrokes work)
+
+Press number 0 to mute the audio. (you might need to click in the video window so that the keystrokes work)
+
