@@ -1,9 +1,9 @@
-#N canvas 149 737 402 248 10;
+#N canvas 147 743 402 248 10;
 #X obj 27 5 syn.video.input \$0;
-#N canvas 224 421 745 336 toy_selector 0;
+#N canvas 222 427 745 336 toy_selector 0;
 #X obj 239 117 hradio 30 1 0 5 empty empty Choose_game 0 -8 0 10 -258113
 -1 -1 4;
-#X obj 249 10 loadbang;
+#X obj 244 -15 loadbang;
 #X obj 467 76 gemkeyboard;
 #X obj 461 105 select 10 11 12 13 14 15 16 17 18 19 20;
 #X obj 469 186 f;
@@ -41,8 +41,9 @@
 #X obj 687 254 print VIDEO-toy;
 #X obj 247 65 - 1;
 #X msg 244 34 5;
+#X obj 243 9 delay 1000;
 #X connect 0 0 12 0;
-#X connect 1 0 36 0;
+#X connect 1 0 37 0;
 #X connect 2 0 3 0;
 #X connect 2 0 26 0;
 #X connect 3 0 7 0;
@@ -78,5 +79,6 @@
 #X connect 33 0 34 0;
 #X connect 35 0 0 0;
 #X connect 36 0 35 0;
+#X connect 37 0 36 0;
 #X coords 0 -1 1 1 300 60 1 100 100;
 #X restore 30 127 pd toy_selector;
