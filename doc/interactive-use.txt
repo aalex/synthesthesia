@@ -13,6 +13,8 @@ If ever you want to stop the patch, toggle fullscreen off and quit the "Lunch" a
 
 To launch the patch again, double-click on the "restart-synthesthesia.sh" file on the desktop, and answer "Run" when prompted about what to do.
 
+To shutdown the computer, stop the patch and choose the "Shut Down" menu item in the top-right menu of the top menu bar. (see Ubuntu instructions for Ubuntu GNU/Linux 12.04 Precise)
+
 End-user instructions
 ---------------------
 Press numbers from 1 to 5 in order to choose the sound toy you want to play with. (you might need to click in the video window so that the keystrokes work)
