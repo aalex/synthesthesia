@@ -226,13 +226,6 @@
        inkscape:export-xdpi="300.14563"
        inkscape:export-ydpi="300.14563" />
     <path
-       style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 95,190 35,20 -35,0 z"
-       id="path3045"
-       inkscape:connector-curvature="0"
-       transform="translate(0,287.36218)"
-       sodipodi:nodetypes="cccc" />
-    <path
        inkscape:connector-curvature="0"
        id="path3806-1-1-2-4"
        d="m 150,467.36218 0,30 40,0 0,-30 z"
@@ -258,6 +251,12 @@
        style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="m 205,210 5,0 c 0,0 0,-15 0,-20 0,-5 5,-5 5,0 0,5 0,20 0,20 l 5,0 c 0,0 0,-10 0,-15 0,-5 5,-5 5,0 0,5 0,15 0,15 l 5,0 c 0,0 0,-5 0,-10 0,-5 5,-5 5,0 0,5 0,10 0,10 l 10,0 0,-30 -40,0 z"
        id="path3859"
+       inkscape:connector-curvature="0"
+       transform="translate(0,287.36218)" />
+    <path
+       style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 95,190 35,20 5,0 0,-30 -40,0 z"
+       id="path3009"
        inkscape:connector-curvature="0"
        transform="translate(0,287.36218)" />
   </g>
