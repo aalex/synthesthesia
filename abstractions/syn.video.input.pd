@@ -1,4 +1,4 @@
-#N canvas 410 185 848 801 10;
+#N canvas 270 172 848 801 10;
 #X obj 124 299 gemwin;
 #X obj 265 263 pix_video;
 #X obj 219 334 pix_texture;
@@ -133,9 +133,11 @@ X position;
 0 \, cursor 0 \, create \, 1;
 #X msg -8 2 0 \, destroy \, dimen 640 480 \, fullscreen 0 \, border
 1 \, cursor 1 \, create \, 1;
+#X msg 160 264 frame 5;
 #X connect 1 0 10 0;
 #X connect 2 0 11 0;
 #X connect 3 0 8 0;
+#X connect 3 0 86 0;
 #X connect 4 0 1 0;
 #X connect 5 0 4 0;
 #X connect 6 0 60 0;
@@ -226,4 +228,5 @@ X position;
 #X connect 83 1 84 0;
 #X connect 84 0 0 0;
 #X connect 85 0 0 0;
+#X connect 86 0 0 0;
 #X coords 0 -1 1 1 300 100 1 100 100;
