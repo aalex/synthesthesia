@@ -1,4 +1,4 @@
-#N canvas 950 234 837 801 10;
+#N canvas 946 246 837 801 10;
 #X obj 124 299 gemwin;
 #X obj 265 263 pix_video;
 #X obj 219 334 pix_texture;
