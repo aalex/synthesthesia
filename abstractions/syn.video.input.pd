@@ -1,14 +1,14 @@
-#N canvas 954 222 837 801 10;
+#N canvas 950 234 837 801 10;
 #X obj 124 299 gemwin;
 #X obj 265 263 pix_video;
 #X obj 219 334 pix_texture;
 #X obj 98 104 loadbang;
-#X msg 337 225 device 0;
+#X msg 337 225 device 1;
 #N canvas 154 153 570 420 serin 0;
-#X obj 205 60 cnv 20 20 20 empty \$0-open-canvas 0 4 10 0 16 -233017
+#X obj 205 60 cnv 20 20 20 empty \$0-open-canvas 1 4 10 0 16 -233017
 -1 0;
 #X obj 60 61 hradio 18 1 1 8 empty empty empty 0 -6 0 8 -258113 -1
--1 0;
+-1 1;
 #X obj 60 13 inlet;
 #X msg 200 202 label \$1;
 #X obj 200 180 makefilename %d;
@@ -142,7 +142,7 @@ X position;
 #X obj 52 954 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 0
 1;
 #X obj 187 599 / 480;
-#N canvas 1 98 484 669 DRAW_LINE 0;
+#N canvas 1 116 484 669 DRAW_LINE 0;
 #X obj 219 389 f 0;
 #X obj 257 394 + 1;
 #X text 211 300 table length;
@@ -155,35 +155,37 @@ X position;
 #X obj 148 98 gemhead 100;
 #X obj 136 288 separator;
 #X text 328 52 enabled;
-#X obj 164 499 vanilla.scale.linear -1 1 -4 4;
-#X obj 84 588 rectangle 0.1 0.1;
 #X obj 84 562 color 0.5 0.5 0.5;
 #X obj 136 255 repeat 640;
 #X obj 210 218 r \$0-width;
-#X obj 123 467 vanilla.scale.linear 0 480 -5.33333 5.33333;
-#X obj 385 239 r \$0-height;
 #X obj 214 432 tabread \$1-array;
+#X obj 123 467 vanilla.scale.linear 0 640 -5.33333 5.33333;
+#X obj 378 408 r \$0-height;
+#X obj 385 239 r \$0-width;
+#X obj 164 499 vanilla.scale.linear 0 480 -4 4;
+#X obj 84 588 rectangle 0.1 0.1;
 #X connect 0 0 1 0;
-#X connect 0 0 17 0;
-#X connect 0 0 19 0;
+#X connect 0 0 15 0;
+#X connect 0 0 16 0;
 #X connect 1 0 0 1;
-#X connect 3 0 15 0;
+#X connect 3 0 13 0;
 #X connect 3 1 4 0;
 #X connect 4 0 0 1;
 #X connect 5 0 6 0;
 #X connect 5 1 0 0;
-#X connect 6 0 14 0;
+#X connect 6 0 12 0;
 #X connect 7 0 8 1;
 #X connect 8 0 3 0;
 #X connect 9 0 8 0;
 #X connect 10 0 5 0;
-#X connect 12 0 6 2;
-#X connect 14 0 13 0;
-#X connect 15 0 10 0;
-#X connect 16 0 15 1;
-#X connect 17 0 6 1;
-#X connect 18 0 17 2;
-#X connect 19 0 12 0;
+#X connect 12 0 20 0;
+#X connect 13 0 10 0;
+#X connect 14 0 13 1;
+#X connect 15 0 19 0;
+#X connect 16 0 6 1;
+#X connect 17 0 19 2;
+#X connect 18 0 16 2;
+#X connect 19 0 6 2;
 #X restore 515 864 pd DRAW_LINE;
 #X obj 515 838 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 1
 1;
@@ -199,7 +201,7 @@ X position;
 #X obj 103 899 pack 640 480;
 #X obj 286 795 tgl 15 0 empty empty empty 17 7 0 10 -1 -258113 -1 1
 1;
-#X obj 362 743 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 1
+#X obj 362 743 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 0
 1;
 #X connect 1 0 10 0;
 #X connect 2 0 11 0;
