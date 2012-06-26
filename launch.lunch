@@ -13,5 +13,6 @@ GEM_PATH = "/usr/lib/pd/extra/Gem"
 # GEM_PATH = "/usr/lib/pd-extended/extra/Gem"
 # AUDIO = "-jack"
 
-add_command("%s %s -channels 2 -lib zexy -path %s -lib Gem -path %s main.pd" % (PD, AUDIO, GEM_PATH, ABSTRACTIONS_PATH), identifier="pd")
+add_command("%s %s -channels 2 -lib zexy -path %s main-audio.pd" % (PD, AUDIO, ABSTRACTIONS_PATH), identifier="pd-audio")
+add_command("%s -noaudio -lib zexy -path %s -lib Gem -path %s main-video.pd" % (PD, GEM_PATH, ABSTRACTIONS_PATH), identifier="pd-video")
 
