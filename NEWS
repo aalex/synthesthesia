@@ -1,9 +1,21 @@
 synthesthesia release notes
 ===========================
 
-synthesthesia 0.1.10 (2012-0?-??)
+synthesthesia 0.2.0 (2012-06-24)
 --------------------------------
 This release is a developer snapshot in an unstable branch.
+
+* add synthesthesia.sh and restart-synthesthesia.sh scripts
+* add interactive-use.txt
+* change default gain for toys
+* pressing the 0 key mutes
+* increase default volume to 0 dB
+* display text with toy number
+* lower Gem frame rate
+* change amplitude/pitch range for two toys
+* add 5th toy (spectrum via additive synthesis)
+* improve main layout
+* press escape to toggle fullscreen
 
 
 synthesthesia 0.1.8 (2012-06-24)
