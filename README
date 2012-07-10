@@ -7,8 +7,6 @@ These files are part of a specific art project.
 
 video camera -> edge detection -> audio synthesis.
 
-(wave shaping and a melodic step sequencer)
-
 Author: Alexandre Quessy
 
 (c) 2012 Alexandre Quessy
@@ -25,12 +23,16 @@ Pure Data libraries: GEM, zexy
 
 Installation and usage
 ----------------------
+How to install it::
 
-sudo apt-get install puredata pd-zexy gem python-lunch
-sudo apt-get install git
-mkdir -p ~/src
-cd ~/src
-git clone git://github.com/aalex/synthesthesia.git
-cd synthesthesia
-lunch -g launch.lunch
+  sudo apt-get install puredata pd-zexy gem python-lunch
+  sudo apt-get install git
+  mkdir -p ~/src
+  cd ~/src
+  git clone git://github.com/aalex/synthesthesia.git
+  cd synthesthesia
+  lunch -g launch.lunch
+  cp restart-synthesthesia.sh ~/Desktop/
+
+See also doc/install-deps.txt and doc/interactive-use.txt
 

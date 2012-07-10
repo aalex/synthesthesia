@@ -1,0 +1,13 @@
+sudo apt-get install git wajig terminator vim
+mkdir -p ~/src
+cd ~/src
+git clone https://github.com/aalex/synthesthesia.git
+git clone https://code.sat.qc.ca/redmine/metalab/metalab-utils.git
+cd ~/src/metalab-utils/
+./git-user-aalex.sh 
+./git-aliases.sh
+cp vimrc ~/.vimrc
+cd ~/src/synthesthesia/
+git co develop
+sudo apt-get install puredata pd-zexy gem python-lunch
+gsettings set org.gnome.desktop.screensaver idle-activation-enabled false
