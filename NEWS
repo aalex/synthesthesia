@@ -13,7 +13,7 @@ This version is a release in a stable branch.
 Bugs fixed:
 
 * On all computers the audio only comes out of the left channel
-* start melodic seq's scale at 47 so that lowest no
+* start melodic seq's scale at 47 so that actual lowest note is 48
 * increase FPS to 10
 
 
