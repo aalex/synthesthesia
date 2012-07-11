@@ -1,0 +1,9 @@
+Synthesthesia FAQ
+=================
+
+Video noise
+-----------
+There seems to be a fair amount of noise (visual and audible) that is a result of the table lamps (and even when there is no light on at all) - is this something that can be eliminated with camera threshold parameters?
+
+Well, the cameras usually have an auto gain control on. The image should have a good balance of light v/s dark colours in it in order to avoid that noise in the image.
+

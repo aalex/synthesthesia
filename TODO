@@ -1,10 +1,3 @@
 To do
 =====
 
-Installation-specific
----------------------
-* Computer SYN 02 audio does not compute automatically - toggle switch needs to be manually retriggered in order for audio to work.
-* Computer SYN 03 seems to not want to turn off (as soon as it is shut down it boots back up again).
-* On all computers the audio only comes out of the left channel
-* There seems to be a fair amount of noise (visual and audible) that is a result of the table lamps (and even when there is no light on at all) - is this something that can be eliminated with camera threshold parameters?
-
