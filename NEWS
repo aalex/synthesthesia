@@ -5,7 +5,9 @@ synthesthesia 0.2.4 (2012-0?-??)
 --------------------------------
 This version is a release in a stable branch.
 
-* 
+Bugs fixed:
+
+* On all computers the audio only comes out of the left channel
 
 
 synthesthesia 0.2.2 (2012-06-25)
