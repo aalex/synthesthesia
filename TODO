@@ -1,5 +1,3 @@
 To do
 =====
 
-* Separate audio and video in two different processes, so that we avoid audio clicks.
-

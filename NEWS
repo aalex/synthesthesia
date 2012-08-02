@@ -1,11 +1,20 @@
 synthesthesia release notes
 ===========================
 
-synthesthesia 0.2.4 (2012-0?-??)
+synthesthesia 0.2.6 (2012-0?-??)
 --------------------------------
 This version is a release in a stable branch.
 
-* 
+
+synthesthesia 0.2.4 (2012-07-11)
+--------------------------------
+This version is a release in a stable branch.
+
+Bugs fixed:
+
+* On all computers the audio only comes out of the left channel
+* start melodic seq's scale at 47 so that actual lowest note is 48
+* increase FPS to 10
 
 
 synthesthesia 0.2.2 (2012-06-25)
