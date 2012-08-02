@@ -1,7 +1,7 @@
-#N canvas 62 109 791 538 10;
+#N canvas 66 114 791 538 10;
 #X obj 224 52 loadbang;
 #X obj 111 138 tgl 15 0 empty empty enabled 17 7 0 10 -258113 -1 -1
-0 1;
+1 1;
 #X obj 487 334 spigot;
 #X obj 490 466 vanilla.table.transfer;
 #X obj 493 375 t b b b;
@@ -48,6 +48,7 @@
 #X msg 299 70 -6;
 #X obj 691 375 r \$1-height;
 #X obj 504 430 pack s 640 0 480;
+#X obj 221 21 r \$1-note;
 #X connect 0 0 16 0;
 #X connect 1 0 2 1;
 #X connect 1 0 5 0;
@@ -94,4 +95,5 @@
 #X connect 42 0 11 0;
 #X connect 43 0 44 3;
 #X connect 44 0 3 1;
+#X connect 45 0 6 0;
 #X coords 0 -1 1 1 300 60 1 100 100;
