@@ -1,4 +1,4 @@
-#N canvas 183 367 858 403 10;
+#N canvas 179 377 858 403 10;
 #X obj 278 239 vanilla.write.wav~;
 #X msg 107 325 \; pd dsp \$1;
 #X obj 105 225 tgl 50 0 empty empty compute_audio 17 7 0 10 -258113
@@ -46,7 +46,9 @@
 #X obj 519 195 unpack f f;
 #X obj 436 194 s \$1-refresh;
 #X obj 437 169 t b;
-#X obj 437 74 route refresh size;
+#X obj 437 74 route refresh size note;
+#X obj 537 140 s \$1-note;
+#X obj 539 163 r \$1-note;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
 #X connect 4 0 8 1;
@@ -85,4 +87,5 @@
 #X connect 43 0 42 0;
 #X connect 44 0 43 0;
 #X connect 44 1 41 0;
+#X connect 44 2 45 0;
 #X coords 0 -1 1 1 300 110 1 100 200;
