@@ -1,7 +1,8 @@
-#N canvas 1125 304 680 405 10;
+#N canvas 714 579 680 478 10;
 #X obj 341 5 toy.melodic.sequencer \$0 1;
 #X obj 347 152 toy.sweep \$0 3;
 #X obj 348 232 toy.wave.shape \$0 4;
 #X obj 26 6 syn.audio.output \$0;
 #X obj 342 77 toy.amplitude \$0 2;
 #X obj 350 323 toy.additive \$0 5;
+#X obj 353 389 toy.vocoder \$0 6;
