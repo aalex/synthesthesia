@@ -5,6 +5,11 @@ synthesthesia 0.2.6 (2012-0?-??)
 --------------------------------
 This version is a release in a stable branch.
 
+New features:
+
+* can change note with keyboard
+* new toy: vocoder on noise
+
 
 synthesthesia 0.2.4 (2012-07-11)
 --------------------------------
