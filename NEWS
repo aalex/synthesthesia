@@ -10,6 +10,10 @@ New features:
 * can change note with keyboard
 * new toy: vocoder on noise
 
+Bugs fixed:
+
+* change default FPS to 30
+
 
 synthesthesia 0.2.4 (2012-07-11)
 --------------------------------
