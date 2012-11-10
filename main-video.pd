@@ -1,6 +1,6 @@
-#N canvas 699 236 458 280 10;
+#N canvas 697 241 458 280 10;
 #X obj 27 5 syn.video.input \$0;
-#N canvas 425 427 902 343 toy_selector 1;
+#N canvas 281 365 902 343 toy_selector 0;
 #X obj 210 114 hradio 30 1 0 6 empty empty Choose_game 0 -8 0 10 -258113
 -1 -1 5;
 #X obj 244 -15 loadbang;
@@ -93,7 +93,7 @@
 -1 -1 0 1;
 #X obj 340 171 s __enable_key__;
 #X obj 340 146 == 0;
-#N canvas 143 422 879 343 note 0;
+#N canvas 141 427 879 343 note 0;
 #X floatatom 166 129 5 0 0 0 - - -;
 #X obj 209 18 select a w s e d f t g y h u j k o l;
 #X obj 487 127 t float;
