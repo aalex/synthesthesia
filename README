@@ -17,6 +17,8 @@ Artists Alexandre Quessy, Darsha Hewitt, Nelly-Eve Rajotte and Claudette Lemay f
 Participants were invited to create an experimental sound composition using collages made from black and white paper that they created themselves.
 These collages were then analyzed by the free application also called SYNTHESTHESIA, using these visual scores to generate sounds.
 
+Thanks to Zack Settel for his help with creating a vocoder with the FFT objects.
+
 
 Dependencies
 ------------
