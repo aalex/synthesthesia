@@ -3,8 +3,6 @@ Synthesthesia
 
 Patches for audio synthesis from edge detection.
 
-These files are part of a specific art project.
-
 video camera -> edge detection -> audio synthesis.
 
 Author: Alexandre Quessy
@@ -42,4 +40,6 @@ How to install it::
   cp restart-synthesthesia.sh ~/Desktop/
 
 See also doc/install-deps.txt and doc/interactive-use.txt
+
+See the HACKING document about how to extend Synthesthesia with more instruments.
 
