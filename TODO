@@ -1,3 +1,11 @@
 To do
 =====
 
+* add volume controls
+* port the video analysis to OpenCV and GStreamer. (and maybe QT4)
+* embed audio synthesis patches in libpd.
+* use a faster protocol than FUDI to send the contents of the tables between the video analysis tool and the audio synthesis engine. (using libpd should solve this)
+* create more instruments
+* make the keystroke detection work at startup, without having to click in the GEM window. (moving away from GEM should solve this)
+* use another instruments choice system, since we are limited to 10 choices right now. (numbers on the keyboard)
+* create a web interface with Nodejs to control it?
