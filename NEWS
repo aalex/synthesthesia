@@ -1,7 +1,7 @@
 synthesthesia release notes
 ===========================
 
-synthesthesia 0.2.6 (2012-0?-??)
+synthesthesia 0.2.6 (2013-02-02)
 --------------------------------
 This version is a release in a stable branch.
 
@@ -13,6 +13,8 @@ New features:
 Bugs fixed:
 
 * change default FPS to 30
+* remove identifier keyword in lunch script so that it works on Debian squeeze
+* improve key controls v/s window focus
 
 
 synthesthesia 0.2.4 (2012-07-11)
