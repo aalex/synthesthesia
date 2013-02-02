@@ -1,0 +1,49 @@
+Technical explanations on how to contribute to Synthesthesia
+============================================================
+
+Synthesthesia now consists on a set of Pure Data patches.
+Video analysis currently relies on the GEM library for Pure Data.
+
+General architecture
+--------------------
+
+The two main Pure Data patches are "main-audio.pd" and "main-video.pd".
+The former is for the audio synthesis, the latter for the video analysis.
+These two patches should be ran in two separate instances of Pure Data, ideally.
+This is easy on GNU/Linux, but might be harder on Mac OS X or Microsoft Windows.
+
+How to create instruments for Synthesthesia
+-------------------------------------------
+
+Let's try to explain how to create instruments for this great tool.
+
+Instruments are Pure Data abstractions. They are located in the "abstractions" directory.
+
+Each abstraction is instanciated in the "main-audio.pd" patch.
+Their first argument is "$0".
+Their second argument is their unique ID.
+For now, their unique ID is a number from 0 to 9.
+(That will need to be changed when we will have more than 10 instruments.)
+Make sure that when you add one, its ID is unique.
+You also need to add an entry in the toy (instrument) selector in main-video.pd.
+It is just a horizontal radio button.
+
+The images from the camera are analyzed by the main-video.pd patch.
+It applies a threshold which makes the image black and white.
+For each column in the image, it stores the row of its highest white pixel.
+These tables are sent to the abstractions using three information, on each frame.
+The $0-width receive symbol receives the width of the image.
+The $0-height receive symbol receives the height of the image.
+The $1-enabled reveive symbol receives either 1 or 0, meaning if the instrument is selected or not.
+That number can be sent to the inlet of a [switch~] object in the abstraction to turn audio computing on or off wthin it.
+The $0-array array contains an array whose length is $0-width.
+The range of each of its value is [0, $0-height].
+In each of the instrument, the develop can use the vanilla.table.transfer abstraction to copy the contents of this table in a new-sized table, and change the range of each of the item in the table.
+Each instrument can use the [throw~] object to output audio the the $0-left and $0-right catch symbols.
+
+More about Pure Data
+--------------------
+See Pure Data's documentation for more information on how to write Pure Data abstractions.
+The developer should know of to use the following objects: [receive], [send], [trigger], [spigot], [table], [throw~], [print], [switch~], [metro], [trigger], etc.
+Good luck!
+

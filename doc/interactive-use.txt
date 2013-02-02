@@ -17,7 +17,13 @@ To shutdown the computer, stop the patch and choose the "Shut Down" menu item in
 
 End-user instructions
 ---------------------
-Press numbers from 1 to 5 in order to choose the sound toy you want to play with. (you might need to click in the video window so that the keystrokes work)
+Press numbers from 1 to 6 in order to choose the sound toy (instrument) you want to play with. (you might need to click in the video window so that the keystrokes work)
 
 Press number 0 to mute the audio. (you might need to click in the video window so that the keystrokes work)
+
+Letters "zxcvbnm" (the lowest row on a US keyboard layout) change the octava of some instruments. (from lower to higher)
+
+Letters "asdfghjkl" (the second lowest row on a US keyboard layout) change the note of some instruments. (white keys on a piano, from C to D, one octava higher)
+
+Letters "we", and "tyui" (the second lowest row on a US keyboard layout) change the note of some instruments. (black keys on a piano,from C# to C#, one octava higher)
 
