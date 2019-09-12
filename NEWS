@@ -1,17 +1,17 @@
 synthesthesia release notes
 ===========================
 
-synthesthesia 0.2.8 (2013-??-??)
+synthesthesia 0.3.0 (2019-09-12)
 --------------------------------
 This version is a release in a stable branch.
 
 New features:
 
-* (none) 
+* Change display resolution.
 
 Bugs fixed:
 
-* (none) 
+* Make lunch script usable globally.
 
 
 synthesthesia 0.2.6 (2013-02-02)
