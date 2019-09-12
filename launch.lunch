@@ -2,6 +2,7 @@
 
 import os
 
+MAIN_PATCHES_PATH = os.path.expanduser("~/src/synthesthesia")
 ABSTRACTIONS_PATH = os.path.join(os.path.expanduser("~/src/synthesthesia"), "abstractions")
 
 AUDIO = "-alsa"
@@ -13,6 +14,11 @@ GEM_PATH = "/usr/lib/pd/extra/Gem"
 # GEM_PATH = "/usr/lib/pd-extended/extra/Gem"
 # AUDIO = "-jack"
 
-add_command("%s %s -channels 2 -lib zexy -path %s main-audio.pd" % (PD, AUDIO, ABSTRACTIONS_PATH), sleep_after=1.0)
-add_command("%s -noaudio -lib zexy -path %s -lib Gem -path %s main-video.pd" % (PD, GEM_PATH, ABSTRACTIONS_PATH))
+# Launch the Audio patch:
+add_command("%s %s -channels 2 -lib zexy -path %s %s/main-audio.pd" % (
+    PD, AUDIO, ABSTRACTIONS_PATH, MAIN_PATCHES_PATH), sleep_after=1.0)
+
+# Launch the Video patch:
+add_command("%s -noaudio -lib zexy -path %s -lib Gem -path %s %s/main-video.pd" % (
+   PD, GEM_PATH, ABSTRACTIONS_PATH, MAIN_PATCHES_PATH))
 
